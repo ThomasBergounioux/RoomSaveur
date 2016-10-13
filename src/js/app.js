@@ -37,7 +37,10 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
         url: '/order',
         templateUrl: 'order.html'
     })
-
+    .state('home', {
+        url: '/home',
+        templateUrl: 'home.html'
+    })
     .state('error', {
         url: '/404',
         templateUrl: 'error.html'

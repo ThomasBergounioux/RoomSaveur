@@ -20,12 +20,11 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'timeline.html',
         controller: 'menuCtrl'
     })
-<<<<<<< HEAD
     .state('profil', {
         url: '/profil',
         templateUrl: 'profil.html'
-        // controller: 'menuCtrl'
-=======
+    })
+        
     .state('login', {
         url: '/login',
         templateUrl: 'login.html'
@@ -37,14 +36,17 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
     .state('order', {
         url: '/order',
         templateUrl: 'order.html'
->>>>>>> ec3e016d7284e5f18be061cdfc6375b3c797830b
     })
-
+    .state('home', {
+        url: '/home',
+        templateUrl: 'home.html'
+    })
     .state('error', {
         url: '/404',
         templateUrl: 'error.html'
     });
 });
+
 'use strict';
 
 angular.module('roomApp')
@@ -508,3 +510,11 @@ angular.module('roomApp')
             }
         }]
     });
+
+roomApp.service('login', [function() {
+	console.log('riririri')
+    this.getUsers = function() {
+    	var users = 'user1, user2';
+    	console.log('ok');
+    }
+}]);
