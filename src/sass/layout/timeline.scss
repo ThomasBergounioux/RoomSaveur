@@ -1,7 +1,7 @@
 .timeline {
     width: 100%;
     .timeline_head {
-        background: url('../img/timeline_head.jpg') no-repeat;
+        background: url('../img/header-Timeline.jpg') no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
         height: 345px;
@@ -14,10 +14,12 @@
             align-items: center;
             .timeline_title_logo {
                 margin: 1em auto;
+                width: 100px;
             }
             .timeline_title {
                 font-size: 2rem;
                 margin: 26px auto 8px;
+                color: $black;
             }
             .timeline_title_week {
                 font-size: 1.7rem;
@@ -51,7 +53,7 @@
                         width: 49.85%;
                     }
                     .timeline_content_day {
-                        margin-right: 1em;
+                        margin-right: 2em;
                         margin-left: 0;
                     }
                 }
@@ -73,6 +75,7 @@
                         border-radius: 4px;
                         img {
                             width: 105%;
+                            box-shadow: 0 3px 5px rgba(0,0,0,0.2);
                         }
                         h4 {
                             display: inline;
@@ -165,7 +168,7 @@
                     align-items: center;
                     margin-left: 2em;
                     .timeline_content_day {
-                        font-size: 2rem;
+                        font-size: 1rem;
                     }
                 }
             }
