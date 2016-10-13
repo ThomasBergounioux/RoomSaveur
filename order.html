@@ -1,0 +1,104 @@
+<section class="order" id="order">
+    <div class="orderContent">
+        <div class="order_titleContent titleContent">
+            <h3><strong>Valider</strong> ma commande</h3>
+            <hr class="order_titleContent_stripe titleContent_stripe" />
+        </div>
+        <div class="commande_container">
+            <span class="commande_img"></span>
+            <div class="commande_desc_container">
+                <div class="commande_desc">
+                    <h4>Saumon fumé, asperges et riz</h4>
+                    <p>Livré le <span>12/10/16</span> à <span>12h05</span></p>
+                    <p>Livré au <span>domicile</span></p>
+                </div>
+                <div class="commande_price">
+                    <h5 class="little_price">16,20 € HT</h5>
+                    <h5 class="big_price">18,35 € <span class="little_price">TTC</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="order_titleContent titleContent">
+            <h3><strong>Informations</strong> de livraison</h3>
+            <hr class="order_titleContent_stripe titleContent_stripe" />
+        </div>
+        <div class="order_delivery">
+            <h4>choisir une adresse de livraison</h4>
+            <ul class="order_deliveryList">
+                <li class="order_deliveryItem">
+                    <!-- <span class="order_deliveryItem_rounded" id="home"></span> -->
+                    <input type="radio" class="order_deliveryItem_rounded">
+                    <span>Domicile</span>
+                </li>
+                <li class="order_deliveryItem">
+                    <!-- <span class="order_deliveryItem_rounded" id="office"></span> -->
+                    <input type="radio" class="order_deliveryItem_rounded">
+                    <span>Bureau</span>
+                </li>
+                <li class="order_deliveryItem borderRight">
+                    <!-- <span class="order_deliveryItem_rounded" id="other"></span> -->
+                    <input type="radio" class="order_deliveryItem_rounded">
+                    <span>Autre</span>
+                    <input type="text" class="order_deliveryItem_otherAdress borderRight" placeholder="Saisir une autre adresse de livraison" />
+                </li>
+            </ul>
+        </div>
+        <div class="order_titleContent titleContent">
+            <h3><strong>Informations</strong> de paiement</h3>
+            <hr class="order_titleContent_stripe titleContent_stripe" />
+        </div>
+        <div class="order_cbContent">
+            <ul class="order_cb_list">
+                <li class="order_cb_list borderRight cb_card"></li>
+                <li class="order_cb_list borderRight cb_cb">
+                    <input type="text" placeholder="Numéro de carte banquaire" />
+                </li>
+                <li class="order_cb_list borderRight cb_date">
+                    <input type="text" placeholder="MM / AA" />
+                </li>
+                <li class="order_cb_list borderRight cb_crypto">
+                    <input type="text" placeholder="Cryptogramme" />
+                </li>
+            </ul>
+        </div>
+        <div class="order_finalize">
+            <input type="checkbox" id="orderFinalizeCheck" class="order_finalize_check" />
+            <label for="orderFinalizeCheck">Sauvegarder cette carte</label>
+            <button class="order_finalize_check btn">Payer</button>
+        </div>
+    </div>
+    <footer class="footer timeline_footer">
+        <div class="footer_content">
+            <p class="footer_txt">
+                Vous souhaitez connaître
+                <br/>
+                <strong>nos menus chaque semaine ?</strong>
+            </p>
+            <p class="footer_txt newsFollow">
+                Abonnez-vous à notre newsletter
+            </p>
+            <form action="submit" class="timeline_footer_form">
+                <input type="mail" placeholder="Email" id="mail" />
+                <button type="submit" class="btn timeline_footer_form_btn">Envoyer</button>
+            </form>
+            <p class="footer_txt followUs">
+                Suivez nous sur
+                <br/><strong>les réseaux sociaux !</strong>
+            </p>
+            <ul class="timeline_footer_socialList">
+                <li class="timeline_footer_socialList_item">
+                    <img src="dest/img/facebook.png" alt="facebook">
+                </li>
+                <li class="timeline_footer_socialList_item">
+                    <img src="dest/img/twitter.png" alt="twitter">
+                </li>
+                <li class="timeline_footer_socialList_item">
+                    <img src="dest/img/instagram.png" alt="instagram">
+                </li>
+            </ul>
+            <span class="timeline_footer_mentions">
+    		<a href="">Mentions légales</a>
+		</span>
+        </div>
+    </footer>
+</section>
