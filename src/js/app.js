@@ -20,6 +20,18 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'timeline.html',
         controller: 'menuCtrl'
     })
+    .state('login', {
+        url: '/login',
+        templateUrl: 'login.html'
+    })
+    .state('register', {
+        url: '/register',
+        templateUrl: 'register.html'
+    })
+    .state('order', {
+        url: '/order',
+        templateUrl: 'order.html'
+    })
 
     .state('error', {
         url: '/404',

@@ -1,0 +1,52 @@
+.order {
+    padding-top: 5em;
+    font-family: $montserrat;
+    .orderContent {
+        width: 86.8%;
+        margin: 0 auto;
+        .order_titleContent {
+            margin: 0 auto;
+        }
+        .commande_container {
+            width: 90%;
+            margin: 2em auto;
+        }
+        .order_delivery {
+            h4 {
+                font-size: 1.3rem;
+                color: $black;
+                text-transform: uppercase;
+                padding-left: 5%;
+                margin-top: 1em;
+                font-family: $montserrat;
+            }
+            .order_deliveryList {
+                display: flex;
+                width: 90%;
+                // background: red;
+                margin-top: 2em;
+                margin-left: 10%;
+                flex-direction: row;
+                justify-content: space-between;
+                .order_deliveryItem{
+                	margin: 0 5em;
+                	&:first-child{
+                		margin-left: 0 !important;
+                	}
+                	&:last-child{
+                		margin-right: 0 !important;
+                	}
+                	.order_deliveryItem_rounded{
+                		background: red;
+                		width: 15px;
+                		height: 15px;
+                	}
+                	.order_deliveryItem_otherAdress{
+                		border: none;
+                	}
+                }
+
+            }
+        }
+    }
+}
