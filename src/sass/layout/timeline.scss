@@ -1,34 +1,44 @@
 .timeline {
     width: 100%;
-    margin-top: 5em;
-    .timeline_title {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    .timeline_head {
+        background: url('../img/timeline_head.jpg') no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 345px;
+        // background-attachment : fixed;
         .timeline_title {
-            font-size: 2rem;
-        }
-        .timeline_title_week {
-            font-size: 1.7rem;
-            font-family: $montserrat;
-            color: $black;
-            margin-top: 3px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .timeline_title_logo {
+                margin: 1em auto;
+            }
+            .timeline_title {
+                font-size: 2rem;
+                margin: 26px auto 8px;
+            }
+            .timeline_title_week {
+                font-size: 1.7rem;
+                font-family: $montserrat;
+                color: $black;
+                margin-top: 3px;
+            }
         }
     }
     .timeline_desc {
         font-size: 1.1rem;
-        margin: 3em auto;
+        margin: 1em auto;
         text-align: center;
-        width: 70%;
+        width: 45%;
         line-height: 27px;
         font-style: italic;
         color: $black;
         font-family: $cardo;
     }
     .timeline_content {
-        margin-top: 6em;
+        margin-top: 4em;
         .timeline_content_list {
             .timeline_content_list_item {
                 display: flex;
@@ -36,8 +46,9 @@
                 margin-top: -5px;
                 &:nth-child(even) {
                     flex-direction: row-reverse;
+                    margin-top: -140px;
                     .timeline_content_list_item_menusContent {
-                        width: 49.5%;
+                        width: 49.85%;
                     }
                     .timeline_content_day {
                         margin-right: 1em;
@@ -54,20 +65,20 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
-                        padding-bottom: 20px;
+                        padding-bottom: 40px;
                         align-items: center;
                         width: 40%;
                         float: left;
-                        border-top: 4px solid $green;
-                        box-shadow: 0 6px 32px rgba(0, 0, 0, .27);
+                        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
                         border-radius: 4px;
                         img {
-                            width: 100%;
+                            width: 105%;
                         }
                         h4 {
                             display: inline;
                             text-align: center;
                             font-size: 1rem;
+                            line-height: 22px;
                             color: rgba(0, 0, 0, .7);
                             margin: 0.5em auto 0.3em;
                             text-transform: uppercase;
@@ -78,6 +89,7 @@
                         h3 {
                             display: inline;
                             font-size: 1rem;
+                            line-height: 20px;
                         }
                         p {
                             display: inline;
@@ -86,16 +98,37 @@
                             font-family: $cardo;
                             color: $black;
                             font-style: italic;
+                            line-height: 19px;
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                        .timeline_content_list_item_btn {
+                            position: absolute;
+                            bottom: -15px;
+                            width: 80%;
+                            background: $blueGreen;
+                            padding: 8px 20px;
+                            color: #fff;
+                            font-size: 1rem;
+                            text-align: center;
+                            text-transform: uppercase;
+                            border-radius: 0;
+                            cursor: pointer;
+                            transition: 0.3s;
+                            &:hover{
+                            	background: $blueGreenHover;
+                            }
                         }
                     }
                 }
                 .timeline_content_stripe {
                     position: relative;
-                    width: 5px;
+                    width: 2px;
                     height: auto;
                     background: $blue;
                     &::before,
                     &::after {
+                        visibility: hidden;
                         content: '';
                         position: absolute;
                         background: #368e8c; //Darkblue
@@ -104,20 +137,26 @@
                         border-radius: 100%;
                         left: -5px;
                     }
-                    &::before {
-                        top: -5px;
+                    &.first {
+                        &::before {
+                            top: -5px;
+                            visibility: visible;
+                        }
                     }
-                    &::after {
-                        bottom: -5px;
+                    &.last {
+                        &::after {
+                            bottom: -5px;
+                            visibility: visible;
+                        }
                     }
                     .timeline_content_stripe_round {
                         position: absolute;
                         background: #368e8c; //Darkblue
-                        width: 15px;
-                        height: 15px;
+                        width: 7px;
+                        height: 7px;
                         border-radius: 100%;
-                        left: -20px;
-                        top: 45%;
+                        left: -17px;
+                        top: 46%;
                         border: 15px solid #C1DFE0;
                     }
                 }

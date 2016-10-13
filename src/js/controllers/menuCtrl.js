@@ -16,11 +16,11 @@ angular.module('roomApp')
         ]
 
         $scope.menus = [{
-                    title: 'Grande planche italienne végétarienne',
+                    title: 'Saumon fumé',
                     id: '1',
-                    desc : 'au poulet et crudités',
+                    desc : 'asperge et au riz',
                     description: {
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates accusamus excepturi vel iusto omnis, veritatis similique itaque fugit corrupti, vitae, a aperiam est facere iure. Doloremque asperiores illo dolores iure.',
+                        text: "Mets festif arrosé d'un jus de citron, servi avec des asperges, du riz, de la crème fraiche et de l'aneth.",
                         ingredients: {
                             kcal: '',
                             lipides: '',
@@ -30,11 +30,11 @@ angular.module('roomApp')
                     photo: '',
                     actif: true
                 }, {
-                    title: 'Bœuf cuisson douce et caponata',
+                    title: 'Nouilles de blé sautées',
                     id: '2',
-                    desc : 'au poulet et crudités',
+                    desc : 'poulet et crudité',
                     description: {
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates accusamus excepturi vel iusto omnis, veritatis similique itaque fugit corrupti, vitae, a aperiam est facere iure. Doloremque asperiores illo dolores iure.',
+                        text: "Nouilles agrémentées de petits légumes et de viande, arrosé d'une sauce sucrée-salée.",
                         ingredients: {
                             kcal: '',
                             lipides: '',
