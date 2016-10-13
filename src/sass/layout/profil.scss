@@ -1,0 +1,151 @@
+
+.profil_body {
+	width: 86.8%;
+	margin: 0 auto;
+}
+
+.profil_title {
+	font-size: 30px;
+	text-align: left;
+
+	&.profil_title_grey {
+		color: $black;
+	}
+
+	.profil_title_green {
+		color: $green;
+	}
+}
+
+.profil_info_perso {
+	margin-top: 60px;
+}
+
+
+.profil_container_info {
+	height: 287px;
+	
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.profil_commande_container {
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	margin: 30px 0px;
+
+	.profil_commande_img {
+		width: 150px;
+		height: 150px;
+		
+		border-radius: 5px;
+	}
+
+	.profil_commande_img_5 {
+		background: url('../img/plat5.jpg');
+		background-size: cover;
+	}
+
+	.profil_commande_img_6 {
+		background: url('../img/plat9.jpg');
+		background-size: cover;
+	}
+}
+
+.profil_commande_desc_container {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 85%;
+	justify-content: space-between;
+
+	.profil_commande_desc {
+		background: #edf2f6;
+		height: 126px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		padding: 25px;
+		justify-content: space-between;
+
+		h4 {
+			font-family: $montserrat;
+			font-size: 26px;
+			text-transform: uppercase;
+			color: rgba(112, 112, 112, 0.83);
+		}
+
+		p {
+			color: rgba(112, 112, 112, 0.54);
+			font-family: $montserrat;
+			font-size: 14px;
+		}
+	}
+}
+
+.profil_commande_price {
+	width: 28%;
+	height: 126px;
+	background: #edf2f6;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 34px 0px;
+	border-radius: 0px 5px 5px 0px;
+
+	.profil_little_price {
+		font-size: 16px;
+		color: #a7aaab;
+		font-family: $montserrat;
+	}
+
+	.profil_big_price {
+		font-size: 30px;
+		color: #44b4b1;
+		font-family: $montserrat;
+
+		span {
+			color: #44b4b1;
+		}
+	}
+}
+
+.profil_input {
+	background: #edf2f6;
+	border: none;
+	box-sizing: border-box;
+	width: 280px;
+	height: 38px;
+	font-size: 16px;
+    padding-left: 13px;
+    border-radius: 3px;
+}
+
+.profil_label {
+	font-family: $montserrat;
+	color: $black;
+	margin-right: 20px;
+}
+
+.profil_input_group_left {
+	    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profil_input_group_right {
+	    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+}

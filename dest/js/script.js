@@ -20,6 +20,11 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'timeline.html',
         controller: 'menuCtrl'
     })
+    .state('profil', {
+        url: '/profil',
+        templateUrl: 'profil.html'
+        // controller: 'menuCtrl'
+    })
 
     .state('error', {
         url: '/404',
