@@ -20,23 +20,10 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'timeline.html',
         controller: 'menuCtrl'
     })
-<<<<<<< HEAD
     .state('profil', {
         url: '/profil',
         templateUrl: 'profil.html'
     })
-        
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    .state('profil', {
-        url: '/profil',
-        templateUrl: 'profil.html'
-        // controller: 'menuCtrl'
-=======
->>>>>>> fa8e435d23678f2d82d86201d3179254032bc30a
->>>>>>> 52bffee216e2e1c179e749239cd4f948f9d76e2a
     .state('login', {
         url: '/login',
         templateUrl: 'login.html'
@@ -48,13 +35,6 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
     .state('order', {
         url: '/order',
         templateUrl: 'order.html'
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> ec3e016d7284e5f18be061cdfc6375b3c797830b
->>>>>>> fa8e435d23678f2d82d86201d3179254032bc30a
->>>>>>> 52bffee216e2e1c179e749239cd4f948f9d76e2a
     })
     .state('home', {
         url: '/home',
@@ -65,7 +45,6 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'error.html'
     });
 });
-
 'use strict';
 
 angular.module('roomApp')
@@ -529,11 +508,3 @@ angular.module('roomApp')
             }
         }]
     });
-
-roomApp.service('login', [function() {
-	console.log('riririri')
-    this.getUsers = function() {
-    	var users = 'user1, user2';
-    	console.log('ok');
-    }
-}]);
