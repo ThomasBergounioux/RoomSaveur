@@ -20,6 +20,15 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'timeline.html',
         controller: 'menuCtrl'
     })
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    .state('profil', {
+        url: '/profil',
+        templateUrl: 'profil.html'
+        // controller: 'menuCtrl'
+=======
+>>>>>>> fa8e435d23678f2d82d86201d3179254032bc30a
     .state('login', {
         url: '/login',
         templateUrl: 'login.html'
@@ -31,6 +40,10 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
     .state('order', {
         url: '/order',
         templateUrl: 'order.html'
+<<<<<<< HEAD
+=======
+>>>>>>> ec3e016d7284e5f18be061cdfc6375b3c797830b
+>>>>>>> fa8e435d23678f2d82d86201d3179254032bc30a
     })
 
     .state('error', {
