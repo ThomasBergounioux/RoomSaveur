@@ -1,0 +1,74 @@
+.commande_container {
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	margin: 19px 0px;
+
+	.commande_img {
+		width: 150px;
+		height: 150px;
+		background: url('../img/plat1.jpg');
+		background-size: cover;
+		border-radius: 5px;
+	}
+}
+
+.commande_desc_container {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 85%;
+	justify-content: space-between;
+
+	.commande_desc {
+		background: $grey;
+		height: 126px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		padding: 25px;
+		justify-content: space-between;
+
+		h4 {
+			font-family: $montserrat;
+			font-size: 26px;
+			text-transform: uppercase;
+			color: rgba(112, 112, 112, 0.83);
+		}
+
+		p {
+			color: rgba(112, 112, 112, 0.54);
+			font-family: $montserrat;
+			font-size: 14px;
+		}
+	}
+}
+
+.commande_price {
+	width: 28%;
+	height: 126px;
+	background: $grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 34px 0px;
+	border-radius: 0px 5px 5px 0px;
+
+	.little_price {
+		font-size: 16px;
+		color: #a7aaab;
+		font-family: $montserrat;
+	}
+
+	.big_price {
+		font-size: 30px;
+		color: #44b4b1;
+		font-family: $montserrat;
+
+		span {
+			color: #44b4b1;
+		}
+	}
+}

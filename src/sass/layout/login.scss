@@ -1,0 +1,105 @@
+.loginRegister {
+    width: 100%;
+    height: 100%;
+    font-family: $montserrat;
+    overflow: hidden;
+    .loginContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        .login_block {
+            height: 100%;
+            &.loginBkg {
+                background: url('../img/login_bkg.jpg') no-repeat;
+                background-size: auto 100%;
+                width: 40%;
+                .loginBkg_logo{
+                	position: absolute;
+                	top: 40px;
+                	left: 80px;
+                	width: 120px;
+                	cursor: pointer;
+                }
+            }
+            &.loginSpace {
+                width: 60%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 7em;
+                justify-content: flex-start;
+                .loginSpace_back {
+                    position: absolute;
+                    top: 70px;
+                    right: 50px;
+                    a {
+                    	position: relative;
+                        color: $black;
+                        &::after,
+                        &::before{
+                        	content: '';
+                        	position: absolute;
+                        	width: 2px;
+                        	height: 8px;
+                        	background: $black;
+                        	left: -10px;
+                        }
+                        &::after{
+                        	transform: rotate(115deg);
+                        	top: 8px;
+                        }
+                        &::before{
+                        	transform: rotate(-115deg);
+                        	top: 4px;
+                        }
+                    }
+                }
+                .loginSpace_phrase {
+                    font-size: 17px;
+                }
+                h3 {
+                    font-size: 2rem;
+                    margin: 0.5em auto;
+                }
+                .loginSpace_form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    .loginSpace_form_input{
+                    	margin: 1em auto;
+                    	width: 60%;
+                    	border: none;
+                    	border-bottom: 2px solid rgba(0,0,0,.2);
+                    	padding: 0 10px 10px;
+                    	outline: none;
+                    	transition : 0.3s;
+                    	&::placeholder{
+                    		padding-left:10px;
+                    		font-size: 14px;
+                    	}
+                    	&:focus{
+                    		border-bottom: 2px solid $blueGreen;
+                    	}
+                    }
+                    .loginSpace_form_btn{
+                    	max-width: 125px;
+                    	background: $blueGreen;
+                    	padding: 10px 20px;
+                    	cursor: pointer;
+                    	transition : 0.3s;
+                    	margin: 1em auto;
+                    	font-size: 0.7rem;
+                    	letter-spacing: 0.5px;
+                    	&:hover{
+                    		background: $blueGreenHover;
+                    	}
+                    }
+                }
+            }
+        }
+    }
+}
