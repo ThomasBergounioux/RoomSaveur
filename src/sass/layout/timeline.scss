@@ -1,0 +1,135 @@
+.timeline {
+    width: 100%;
+    margin-top: 5em;
+    .timeline_title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .timeline_title {
+            font-size: 2rem;
+        }
+        .timeline_title_week {
+            font-size: 1.7rem;
+            font-family: $montserrat;
+            color: $black;
+            margin-top: 3px;
+        }
+    }
+    .timeline_desc {
+        font-size: 1.1rem;
+        margin: 3em auto;
+        text-align: center;
+        width: 70%;
+        line-height: 27px;
+        font-style: italic;
+        color: $black;
+        font-family: $cardo;
+    }
+    .timeline_content {
+        margin-top: 6em;
+        .timeline_content_list {
+            .timeline_content_list_item {
+                display: flex;
+                flex-direction: row;
+                margin-top: -5px;
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                    .timeline_content_list_item_menusContent {
+                        width: 49.5%;
+                    }
+                    .timeline_content_day {
+                        margin-right: 1em;
+                        margin-left: 0;
+                    }
+                }
+                .timeline_content_list_item_menusContent {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 50%;
+                    .timeline_content_list_item_menus {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        padding-bottom: 20px;
+                        align-items: center;
+                        width: 40%;
+                        float: left;
+                        border-top: 4px solid $green;
+                        box-shadow: 0 6px 32px rgba(0, 0, 0, .27);
+                        border-radius: 4px;
+                        img {
+                            width: 100%;
+                        }
+                        h4 {
+                            display: inline;
+                            text-align: center;
+                            font-size: 1rem;
+                            color: rgba(0, 0, 0, .7);
+                            margin: 0.5em auto 0.3em;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            color: $black;
+                            font-family: $montserrat;
+                        }
+                        h3 {
+                            display: inline;
+                            font-size: 1rem;
+                        }
+                        p {
+                            display: inline;
+                            width: 80%;
+                            margin-top: 1em;
+                            font-family: $cardo;
+                            color: $black;
+                            font-style: italic;
+                        }
+                    }
+                }
+                .timeline_content_stripe {
+                    position: relative;
+                    width: 5px;
+                    height: auto;
+                    background: $blue;
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: #368e8c; //Darkblue
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 100%;
+                        left: -5px;
+                    }
+                    &::before {
+                        top: -5px;
+                    }
+                    &::after {
+                        bottom: -5px;
+                    }
+                    .timeline_content_stripe_round {
+                        position: absolute;
+                        background: #368e8c; //Darkblue
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 100%;
+                        left: -20px;
+                        top: 45%;
+                        border: 15px solid #C1DFE0;
+                    }
+                }
+                .timeline_content_dayContent {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 2em;
+                    .timeline_content_day {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
