@@ -1,16 +1,20 @@
 <section class="login loginRegister" id="register">
 	<div class="loginContent">
-		<div class="login_block loginBkg"></div>
+		<div class="login_block loginBkg">
+			<img src="dest/img/Logo_white.svg" alt="logo" class="loginBkg_logo" />
+		</div>
 		<div class="login_block loginSpace">
 			<span class="loginSpace_back">
-				<a ui-sref="/home">Retour</a>
+				<a href="/#/register">Retour</a>
 			</span>
 			<span class="loginSpace_phrase">Pour plus de simplicité</span>
-			<h3>Connectez-Vous</h3>
+			<h3>Inscrivez-Vous</h3>
 			<form action="post" class="loginSpace_form">
+				<input type="text" class="loginSpace_form_input" placeholder="Nom">
+				<input type="text" class="loginSpace_form_input" placeholder="Prénom">
 				<input type="text" class="loginSpace_form_input" placeholder="Email">
 				<input type="text" class="loginSpace_form_input" placeholder="Mot de passe">
-				<button class="btn loginSpace_form_btn">Connexion</button>
+				<button class="btn loginSpace_form_btn">S'inscrire</button>
 			</form>
 		</div>
 	</div>
