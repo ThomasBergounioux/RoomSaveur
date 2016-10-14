@@ -60,11 +60,15 @@
         .order_hours{
             margin-top: 2em;
             .orders_hours_select{
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
                 width: 50%;
                 margin-left: 10%;
+                margin-top: 1em;
                 .orders_hours_select_h{
                     color: $green;
-                    margin-right : 1em;
+                    margin :0 1em 0 0.5em;
                     text-transform: uppercase;
 
                 }
@@ -76,12 +80,13 @@
 .select-style {
     padding: 0;
     margin: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $green;
     width: 33px;
     border-radius: 3px;
     overflow: hidden;
     background-color: #fff;
     background: #fff;
+    cursor: pointer;
 }
 
 .select-style select {

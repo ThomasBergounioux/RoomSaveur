@@ -107,6 +107,14 @@ h4 {
     border-radius: 5px;
 }
 
+.btn_blue {
+    background-color: $blue;
+}
+
+.btn_green {
+    background-color: $green;
+}
+
 .borderRight {
     border: none;
     border-right: 5px solid $green;
@@ -120,12 +128,6 @@ h4 {
     border-radius: 5px;
     cursor: pointer;
     border: none;
-    .btn_blue {
-        background-color: $blue;
-    }
-    .btn_green {
-        background-color: $green;
-    }
 }
 
 .btnGreenReverse {
@@ -140,16 +142,19 @@ h4 {
 
 
 /************* MIXINS ***************/
+
 @mixin flexRow() {
-	display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+
 /* MIXIN FLEX COLUMN */
+
 @mixin flexColumn() {
-	display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
