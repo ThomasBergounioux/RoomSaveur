@@ -26,22 +26,51 @@
             <h4>choisir une adresse de livraison</h4>
             <ul class="order_deliveryList">
                 <li class="order_deliveryItem">
-                    <!-- <span class="order_deliveryItem_rounded" id="home"></span> -->
                     <input type="radio" class="order_deliveryItem_rounded">
                     <span>Domicile</span>
                 </li>
                 <li class="order_deliveryItem">
-                    <!-- <span class="order_deliveryItem_rounded" id="office"></span> -->
                     <input type="radio" class="order_deliveryItem_rounded">
                     <span>Bureau</span>
                 </li>
                 <li class="order_deliveryItem borderRight">
-                    <!-- <span class="order_deliveryItem_rounded" id="other"></span> -->
                     <input type="radio" class="order_deliveryItem_rounded">
                     <span>Autre</span>
-                    <input type="text" class="order_deliveryItem_otherAdress borderRight" placeholder="Saisir une autre adresse de livraison" />
+                    <input type="text" class="order_deliveryItem_otherAdress input borderRight" placeholder="Saisir une autre adresse de livraison" />
                 </li>
             </ul>
+        </div>
+        <div class="order_hours">
+            <h4>choisir une adresse de livraison</h4>
+            <div class="orders_hours_select">
+                <div class="select-style">
+                    <select name="select">
+                        <option value="value1" selected>07</option>
+                        <option value="value2">08</option>
+                        <option value="value3">09</option>
+                        <option value="value3">10</option>
+                        <option value="value3">11</option>
+                        <option value="value3">12</option>
+                        <option value="value3">13</option>
+                        <option value="value3">14</option>
+                    </select>
+                </div>
+                <span class="orders_hours_select_h">H</span>
+                <div class="select-style">
+                    <select name="select">
+                        <option value="value1" selected>07</option>
+                        <option value="value2">08</option>
+                        <option value="value3">09</option>
+                        <option value="value3">10</option>
+                        <option value="value3">11</option>
+                        <option value="value3">12</option>
+                        <option value="value3">13</option>
+                        <option value="value3">14</option>
+                    </select>
+                </div>
+                <span class="orders_hours_select_h">min</span>
+                <button class="btn btnGreenReverse">Disponible</button>
+            </div>
         </div>
         <div class="order_titleContent titleContent">
             <h3><strong>Informations</strong> de paiement</h3>
@@ -49,22 +78,22 @@
         </div>
         <div class="order_cbContent">
             <ul class="order_cb_list">
-                <li class="order_cb_list borderRight cb_card"></li>
-                <li class="order_cb_list borderRight cb_cb">
-                    <input type="text" placeholder="Numéro de carte banquaire" />
+                <li class="order_cb_list cb_card"></li>
+                <li class="order_cb_list cb_cb">
+                    <input type="numbers" class="input borderRight" placeholder="Numéro de carte banquaire" />
                 </li>
-                <li class="order_cb_list borderRight cb_date">
-                    <input type="text" placeholder="MM / AA" />
+                <li class="order_cb_list cb_date">
+                    <input type="text" class="input borderRight" placeholder="MM / AA" />
                 </li>
-                <li class="order_cb_list borderRight cb_crypto">
-                    <input type="text" placeholder="Cryptogramme" />
+                <li class="order_cb_list cb_crypto">
+                    <input type="text" class="input borderRight" placeholder="Cryptogramme" />
                 </li>
             </ul>
         </div>
         <div class="order_finalize">
             <input type="checkbox" id="orderFinalizeCheck" class="order_finalize_check" />
             <label for="orderFinalizeCheck">Sauvegarder cette carte</label>
-            <button class="order_finalize_check btn">Payer</button>
+            <button class="order_finalize_check btn btnGreen">Payer</button>
         </div>
     </div>
     <footer class="footer timeline_footer">
@@ -97,8 +126,8 @@
                 </li>
             </ul>
             <span class="timeline_footer_mentions">
-    		<a href="">Mentions légales</a>
-		</span>
+            <a href="">Mentions légales</a>
+        </span>
         </div>
     </footer>
 </section>

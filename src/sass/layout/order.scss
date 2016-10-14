@@ -5,48 +5,97 @@
         width: 86.8%;
         margin: 0 auto;
         .order_titleContent {
-            margin: 0 auto;
+            margin: 2em auto;
         }
         .commande_container {
             width: 90%;
             margin: 2em auto;
         }
         .order_delivery {
-            h4 {
-                font-size: 1.3rem;
-                color: $black;
-                text-transform: uppercase;
-                padding-left: 5%;
-                margin-top: 1em;
-                font-family: $montserrat;
-            }
             .order_deliveryList {
                 display: flex;
                 width: 90%;
-                // background: red;
                 margin-top: 2em;
                 margin-left: 10%;
                 flex-direction: row;
                 justify-content: space-between;
-                .order_deliveryItem{
-                	margin: 0 5em;
-                	&:first-child{
-                		margin-left: 0 !important;
-                	}
-                	&:last-child{
-                		margin-right: 0 !important;
-                	}
-                	.order_deliveryItem_rounded{
-                		background: red;
-                		width: 15px;
-                		height: 15px;
-                	}
-                	.order_deliveryItem_otherAdress{
-                		border: none;
-                	}
+                .order_deliveryItem {
+                    margin: 0 5em;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    &:first-child {
+                        margin-left: 0 !important;
+                    }
+                    &:last-child {
+                        margin-right: 0 !important;
+                    }
+                    .order_deliveryItem_rounded {
+                        background: red;
+                        width: 15px;
+                        height: 15px;
+                    }
+                    .order_deliveryItem_otherAdress {
+                        border: none;
+                        margin-left: 1.5em;
+                    }
+                    .order_deliveryItem_otherAdress::placeholder {
+                        font-size: 0.9rem;
+                    }
                 }
+            }
+        }
+        .order_cb_list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1.5em auto;
+        }
+        .order_finalize {
+            margin-left: 10.5%;
+            .order_finalize_check {
+                margin-left: 2em;
+            }
+        }
+        .order_hours{
+            margin-top: 2em;
+            .orders_hours_select{
+                width: 50%;
+                margin-left: 10%;
+                .orders_hours_select_h{
+                    color: $green;
+                    margin-right : 1em;
+                    text-transform: uppercase;
 
+                }
             }
         }
     }
+}
+
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 33px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
 }

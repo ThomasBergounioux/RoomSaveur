@@ -20,14 +20,10 @@ roomApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'timeline.html',
         controller: 'menuCtrl'
     })
-<<<<<<< HEAD
-=======
     .state('profil', {
         url: '/profil',
         templateUrl: 'profil.html'
     })
-        
->>>>>>> fa8e435d23678f2d82d86201d3179254032bc30a
     .state('login', {
         url: '/login',
         templateUrl: 'login.html'

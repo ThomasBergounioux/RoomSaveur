@@ -1,113 +1,156 @@
-*{
-	border-box: box-sizing;
-}
-body, html{
-	width: 100%;
-	height: 100%;
+* {
+    border-box: box-sizing;
+    outline: none;
 }
 
-a{
-	text-decoration: none;
-	color: inherit;
+body,
+html {
+    width: 100%;
+    height: 100%;
 }
-h2, h3 {
-	text-align: center;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2,
+h3 {
+    text-align: center;
 }
 
 h2 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	color: $dark-green;
-	margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: $dark-green;
+    margin-bottom: 0;
 }
 
 h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 50px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: $green;
-	margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $green;
+    margin: 0;
 }
 
-.btn{
-	border: none;
+h4 {
+    font-size: 1.2rem;
+    color: $black;
+    text-transform: uppercase;
+    padding-left: 5%;
+    margin-top: 1em;
+    font-family: $montserrat;
 }
-.ui{
-	width: 100%;
-	height: 100%;
-}
-.p_description {
-	font-family: $cardo;
-	font-size: 17px;
-	font-style: italic;
-	text-align: center;
-}
-
-.titleContent{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	h3{
-		display:inline;
-		font-size: 30px;
-		strong{
-			color : $black;
-		}
-	}
-	.titleContent_stripe{
-		width: 60%;
-		height: 3px;
-		background-color: $green;
-		border: none;
-	}
-}
-
-// header {
-// 	height: 100%;
-// 	@include flexRow();
-// 	justify-content: flex-end;
-// 	button:first-child {
-// 		margin-right: 13px;
-// 	}
-// 	.btn {
-// 		padding: 16px 61px;
-// 		font-size: 13px;
-// 		letter-spacing: 1px;
-// 	}
-// }
-
-.section_presentation {
-	// @include flexColumn();
-	.btn_carte {
-		padding: 25px 80px;
-		font-size: 16px;
-		font-weight: bold;
-
-	}
-}
-
 
 .btn {
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	border: none;
-	border-radius: 5px;
+    border: none;
 }
 
-.btn_blue {
-	background-color: $blue;	
+.ui {
+    width: 100%;
+    height: 100%;
 }
 
-.btn_green  {
-	background-color: $green;
+.p_description {
+    font-family: $cardo;
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+}
+
+.input {
+    background: #edf2f6;
+    box-sizing: border-box;
+    width: 280px;
+    height: 38px;
+    font-size: 16px;
+    padding-left: 13px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.titleContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        display: inline;
+        font-size: 27px;
+        strong {
+            color: $black;
+        }
+    }
+    .titleContent_stripe {
+        width: 60%;
+        height: 3px;
+        background-color: $green;
+        border: none;
+    }
+}
+
+.section_presentation {
+    // @include flexColumn();
+    .btn_carte {
+        padding: 25px 80px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
 }
 
 .borderRight {
-	border: none;
-	border-right: 5px solid $green;
+    border: none;
+    border-right: 5px solid $green;
+}
+
+.btnGreen {
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    background: $green;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    .btn_blue {
+        background-color: $blue;
+    }
+    .btn_green {
+        background-color: $green;
+    }
+}
+
+.btnGreenReverse {
+    padding: 10px 30px;
+    background: #fff;
+    text-transform: uppercase;
+    border: 1px solid $green;
+    color: $green;
+    border-radius: 5px;
+    // cursor: pointer;
 }
 
 
+/************* MIXINS ***************/
+@mixin flexRow() {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MIXIN FLEX COLUMN */
+@mixin flexColumn() {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

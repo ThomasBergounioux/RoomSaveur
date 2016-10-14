@@ -1,23 +1,49 @@
-header{
+// header{
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	height: 60px;
+// 	background: transparent;
+// 	// border-bottom: 1px solid $black;
+// 	z-index: 10;
+// 	.nav{
+// 		height: 100%;
+// 		display: flex;
+// 		flex-direction: row;
+// 		justify-content : space-around;
+// 		align-items: center;
+// 		li {
+// 			a{
+// 				color: $blue;
+// 				font-family: $montserrat;
+// 			}
+// 		}
+// 	}
+// }
+
+.fakeNav{
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 60px;
-	background: transparent;
-	// border-bottom: 1px solid $black;
-	z-index: 10;
-	.nav{
-		height: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content : space-around;
-		align-items: center;
-		li {
-			a{
-				color: $blue;
-				font-family: $montserrat;
-			}
-		}
+	right:0;
+	top: 30%;
+	background: red;
+	li{
+		display:block;
+	}
+}
+
+header {
+	position: fixed;
+	right: 35px;
+	top: 35px;
+	@include flexRow();
+	justify-content: flex-end;
+	button:first-child {
+		margin-right: 13px;
+	}
+	.btn {
+		padding: 16px 61px;
+		font-size: 13px;
+		letter-spacing: 1px;
 	}
 }
