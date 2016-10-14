@@ -67,14 +67,14 @@
 				position: relative;
 				letter-spacing: 1px;
 				box-shadow: 0px 0px 20px 1px rgba(68, 180, 177, 0.7);
-				&:after {
-					position: absolute;
-    				top: 20px;
-				    right: 45px;
-				    content: url(../img/next.png);
-				    height: 20px;
-				    width: 20px;
-				}
+				// &:after {
+				// 	position: absolute;
+    // 				top: 20px;
+				//     right: 45px;
+				//     content: url(../img/next.png);
+				//     height: 20px;
+				//     width: 20px;
+				// }
 			}
 		}
 	}
