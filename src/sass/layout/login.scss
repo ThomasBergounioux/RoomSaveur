@@ -65,6 +65,23 @@
                     font-size: 2rem;
                     margin: 0.5em auto;
                 }
+                .loginRegister_socialConnect{
+                    margin: 1em auto 2em;
+                    .loginRegister_socialConnect_item{
+                        padding: 10px 25px;
+                        color: #fff;
+                        text-align: center;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        &.facebook{
+                            background: #3B5998;
+                        }
+                        &.twitter{
+                            background: #1DA1F3;
+                        }
+                    }
+                }
                 .loginSpace_form {
                     display: flex;
                     flex-direction: column;

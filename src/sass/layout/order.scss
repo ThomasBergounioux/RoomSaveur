@@ -1,22 +1,40 @@
 .order {
-    padding-top: 5em;
     font-family: $montserrat;
+    background: url(../img/bg-pattern.png) center repeat;
+    background-size: cover;
+    padding-top: 5em;
+    .orderNav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: #fff;
+        a {
+            margin: 1em 2em;
+            padding: 11px 35px;
+        }
+    }
     .orderContent {
         width: 86.8%;
         margin: 0 auto;
+        padding-top: 1em;
         .order_titleContent {
             margin: 2em auto;
         }
         .commande_container {
             width: 90%;
-            margin: 2em auto;
+            margin: 2em auto 4em;
         }
         .order_delivery {
+            width: 80%;
             .order_deliveryList {
                 display: flex;
                 width: 90%;
-                margin-top: 2em;
+                margin-top: 1em;
                 margin-left: 10%;
+                margin-bottom: 3em;
                 flex-direction: row;
                 justify-content: space-between;
                 .order_deliveryItem {
@@ -45,6 +63,22 @@
                 }
             }
         }
+        .order_hours {
+            margin-top: 2em;
+            .orders_hours_select {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                width: 50%;
+                margin-left: 10%;
+                margin-top: 1em;
+                .orders_hours_select_h {
+                    color: $green;
+                    margin: 0 1em 0 0.5em;
+                    text-transform: uppercase;
+                }
+            }
+        }
         .order_cb_list {
             display: flex;
             justify-content: space-between;
@@ -55,23 +89,6 @@
             margin-left: 10.5%;
             .order_finalize_check {
                 margin-left: 2em;
-            }
-        }
-        .order_hours{
-            margin-top: 2em;
-            .orders_hours_select{
-                display: flex;
-                flex-direction: row;
-                align-items: baseline;
-                width: 50%;
-                margin-left: 10%;
-                margin-top: 1em;
-                .orders_hours_select_h{
-                    color: $green;
-                    margin :0 1em 0 0.5em;
-                    text-transform: uppercase;
-
-                }
             }
         }
     }
@@ -97,8 +114,8 @@
     background-color: transparent;
     background-image: none;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .select-style select:focus {
