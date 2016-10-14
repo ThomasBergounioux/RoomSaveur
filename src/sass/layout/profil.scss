@@ -1,7 +1,30 @@
-
+.profil{
+	width: 100%;
+	background: url('../img/bg-pattern.png') center repeat;
+	.profilNav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: #fff;
+        a {
+            margin: 1em 2em;
+            padding: 11px 35px;
+        }
+    }
+    .loadMore{
+    	display: block;
+    	font-size: 1rem;
+    	margin: 2em auto;
+    	padding: 10px 20px;
+    }
+}
 .profil_body {
 	width: 86.8%;
 	margin: 0 auto;
+	padding-top :2em;
 }
 
 .profil_title {

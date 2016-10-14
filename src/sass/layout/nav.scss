@@ -1,25 +1,43 @@
-.fakeNav{
-	position: fixed;
-	right:0;
-	top: 30%;
-	background: red;
-	li{
-		display:block;
-	}
+.fakeNav {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    background: red;
+    li {
+        display: block;
+    }
 }
 
 .nav {
-	position: fixed;
-	right: 35px;
-	top: 35px;
-	@include flexRow();
-	justify-content: flex-end;
-	a:first-child {
-		margin-right: 13px;
-	}
-	.btn {
-		padding: 16px 61px;
-		font-size: 13px;
-		letter-spacing: 1px;
-	}
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    @include flexRow();
+    justify-content: flex-end;
+    background: #fff;
+    z-index: 100;
+    padding-top:10px;
+    padding-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    a {
+        margin: 1em 2em;
+        padding: 11px 35px;
+    }
+}
+
+.altNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    a {
+        margin: 1em 2em;
+        padding: 11px 35px;
+    }
 }

@@ -3,23 +3,10 @@
     background: url(../img/bg-pattern.png) center repeat;
     background-size: cover;
     padding-top: 5em;
-    .orderNav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        background: #fff;
-        a {
-            margin: 1em 2em;
-            padding: 11px 35px;
-        }
-    }
     .orderContent {
         width: 86.8%;
         margin: 0 auto;
-        padding-top: 1em;
+        padding-top: 2em;
         .order_titleContent {
             margin: 2em auto;
         }

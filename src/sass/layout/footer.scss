@@ -30,7 +30,7 @@
                 text-transform: initial;
             }
         }
-        .timeline_footer_form {
+        .footer_form {
             margin-bottom: 2em;
             input {
                 padding: 10px 30px;
@@ -47,15 +47,15 @@
             font-size: 18px;
             line-height: 29px;
         }
-        .timeline_footer_socialList {
+        .footer_socialList {
         	margin-top: 1em;
-            .timeline_footer_socialList_item {
+            .footer_socialList_item {
                 display: inline;
                 margin: 0 20px;
                 cursor: pointer;
             }
         }
-        .timeline_footer_mentions {
+        .footer_mentions {
             position: absolute;
             bottom: 10px;
             left: 5%;
