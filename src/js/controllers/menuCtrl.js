@@ -381,5 +381,19 @@ angular.module('roomApp')
                 photo: '',
                 actif: true
             }, ]
-            // console.log(menus)
+            
+            var produitAjouté = 0,
+                cartCompt = $('.cartCompt'),
+                continueShopping = $('.continueShopping'),
+                cartPlural = $('.cartPlural');
+
+            $('.timeline_content_list_item_btn.btn').on('click', function(){
+                produitAjouté++;
+                cartCompt.html(produitAjouté);
+                cartPlural.html('s');
+
+                continueShopping.css('opacity', '1');
+
+                $(this).html('Ajouté').css('background-color', '#aece82');
+            })
     });

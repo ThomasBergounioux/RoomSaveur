@@ -175,3 +175,42 @@
         }
     }
 }
+
+.continueShopping {
+    width: 170px;
+    height: 35px;
+    background: #81a352;
+    position: fixed;
+    bottom: 92px;
+    right: 54px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 3px;
+    font-family: $montserrat;
+    text-transform: uppercase;
+}
+
+.infoCart {
+    width: 209px;
+    background: #242424;
+    bottom: 50px;
+    font-size: 13px;
+    height: 35px;
+    position: fixed;
+    right: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 3px;
+    font-family: $montserrat;
+    
+    .cartCompt, .cartPlural {
+        margin-right: 4px; 
+    }
+}

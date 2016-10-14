@@ -1,5 +1,7 @@
 angular.module('roomApp')
 	.controller('timelineCtrl', function() {
+		$scope.order = 'commander';
 
-		console.log(menus)
+
+		console.log($scope.order)
 	})
